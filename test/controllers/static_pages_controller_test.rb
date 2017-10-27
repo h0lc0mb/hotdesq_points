@@ -6,19 +6,14 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     @base_title = "Hot DesQ Points"
   end
 
-  test "should get root" do
-    get root_url
-    assert_response :success
-  end
-
   test "should get home" do
-    get static_pages_home_url
+    get root_path
     assert_response :success
-    assert_select "title", "Home | Hot DesQ Points"
+    assert_select "title", "Hot DesQ Points"
   end
 
   test "should get help" do
-    get static_pages_help_url
+    get help_path
     assert_response :success
   end
 
