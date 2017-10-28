@@ -1,1 +1,5 @@
-# empty
+twizzler:
+  name: Twizzler St John
+  email: twizzler@fenty.co.au
+  startup: The Fenty Riley Co
+  password_digest: <%= User.digest('password') %>
