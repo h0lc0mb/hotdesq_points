@@ -3,3 +3,9 @@ twizzler:
   email: twizzler@fenty.co.au
   startup: The Fenty Riley Co
   password_digest: <%= User.digest('password') %>
+
+ninja:
+  name: Ninja Warrior
+  email: ninja@america.org
+  startup: American Ninja Warrior
+  password_digest: <%= User.digest('password') %>
